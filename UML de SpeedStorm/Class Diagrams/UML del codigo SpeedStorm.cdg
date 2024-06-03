@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="plantillaCarro" package="speedstrom" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="marca" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="pintura"/>
+          <Argument type="String" name="aceleracion"/>
+          <Argument type="String" name="freno"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getPintura" returnType="String" visibility="public"/>
+        <Method name="setPintura" returnType="void" visibility="public">
+          <Argument type="String" name="pintura"/>
+        </Method>
+        <Method name="getAceleracion" returnType="String" visibility="public"/>
+        <Method name="setAceleracion" returnType="void" visibility="public">
+          <Argument type="String" name="aceleracion"/>
+        </Method>
+        <Method name="getFreno" returnType="String" visibility="public"/>
+        <Method name="setFreno" returnType="void" visibility="public">
+          <Argument type="String" name="freno"/>
+        </Method>
+        <Method name="mostrarDatos" returnType="void" visibility="public"/>
+        <Method name="nombreCarros" returnType="void" visibility="public"/>
+        <Method name="metodo1" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="carro1" package="speedstrom" visibility="public" xPosition="526.0" yPosition="44.0">
+      <Fields>
+        <Field name="nPuerta" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nPuerta"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="nPuerta"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="String" name="pintura"/>
+          <Argument type="String" name="aceleracion"/>
+          <Argument type="String" name="freno"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getnPuerta" returnType="String" visibility="public"/>
+        <Method name="setnPuerta" returnType="void" visibility="public">
+          <Argument type="String" name="nPuerta"/>
+        </Method>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="setMarca" returnType="void" visibility="public">
+          <Argument type="String" name="marca"/>
+        </Method>
+        <Method name="getPintura" returnType="String" visibility="public"/>
+        <Method name="setPintura" returnType="void" visibility="public">
+          <Argument type="String" name="pintura"/>
+        </Method>
+        <Method name="getAceleracion" returnType="String" visibility="public"/>
+        <Method name="setAceleracion" returnType="void" visibility="public">
+          <Argument type="String" name="aceleracion"/>
+        </Method>
+        <Method name="getFreno" returnType="String" visibility="public"/>
+        <Method name="setFreno" returnType="void" visibility="public">
+          <Argument type="String" name="freno"/>
+        </Method>
+        <Method name="mostrarDatos" returnType="void" visibility="public"/>
+        <Method name="nombreCarros" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="main" package="speedstrom" visibility="public" xPosition="333.0" yPosition="446.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="speedstrom.carro1" target="speedstrom.plantillaCarro"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
